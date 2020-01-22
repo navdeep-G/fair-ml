@@ -2,7 +2,7 @@
                		aspectratio=169,
                		hyperref={colorlinks}
                		]{beamer}
-\usetheme{Singapore}
+\usetheme{AnnArbor}
 \usecolortheme[snowy, cautious]{owl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -48,10 +48,31 @@
 			\frametitle{Why Care About Discrimination in ML?}
 			\begin{itemize}
 				\Large
-				\item \textbf{Reputational risk}: Upon encountering a perceived unethical ML system, 34\% of consumers are likely to, ``stop interacting with the company.''\footnote{\scriptsize{See: \href{https://www.capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations/}{Why addressing ethical questions in AI will benefit organizations}.}}
-				\item Non-compliance fines and litigation costs.
-				\item Responsible practice of ML. 
-			\end{itemize}
+				\item \textbf{Reputational risk}: 
+  			  \begin{itemize}
+  			    \item {Upon encountering a perceived unethical ML system, 34\% of consumers are likely to, ``stop interacting with the company.''\footnote{\scriptsize{See: \href{https://www      .capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations/}{Why addressing ethical questions in AI will benefit organizations}.}}}
+  			      \begin{itemize}
+  			        \item \tiny{Consumers will not differentiate between intentional or unintentional unethical behavior in a ML system ...}
+  			        \item \tiny{If trust is lost in a product/service by a consumer, then it will be difficult to obtain again.}
+  			      \end{itemize}
+  			  \end{itemize}
+				\item \textbf{Responsible practice of ML}:
+  				\begin{itemize}
+  				  \item {Clear understanding and trust of a ML system's behavior.}
+  				    \begin{itemize}
+      				  \item \tiny{Analysts, engineers, physicians, researchers, scientists, and humans in general have the need to understand and trust models and modeling results that affect our work and our lives.}
+    				  \end{itemize}
+            \item {Rigorous vetting of a ML system, especially when it comes to high stake applications e.g.:}
+              \begin{itemize}
+                \item \tiny{Fair lending}
+                \item \tiny{Credit scoring}
+                \item \tiny{Facial recognition}
+                \item \tiny{Healthcare diagnosis}
+                \item \tiny{Recidivism}
+              \end{itemize}
+          \end{itemize}
+				\item \textbf{Non-compliance fines and litigation costs}.
+  		\end{itemize}
 		\end{frame}
 		\subsection*{}
 		\begin{frame}
@@ -71,8 +92,14 @@
 			\begin{itemize}
 			\Large
 			\item Almost all data, statistical models, and machine learning (ML) models encode different types of \textit{bias}, i.e., systematic misrepresentations of reality.\\
+  			\begin{itemize}
+  			  \item \tiny{Models have their own sense of "reality" based on data given to the model and the algorithm itself.}
+  			\end{itemize}
 			\item Sometimes, bias is helpful, e.g. shrunken, robust $\beta_j$ coefficients in penalized linear models.\\
-			\item Other types of bias might be unwanted, unhelpful, or illegal discrimination. 
+			  \begin{itemize}
+			    \item \tiny{Bias-Variance trade off}
+			  \end{itemize}
+			\item Other types of bias might be unwanted, unhelpful, or illegal discrimination, e.g. penalizing observations based on race, gender, socioeconomic status, etc.
 			\end{itemize}
 		\end{frame}					
 		\subsection*{}
@@ -170,15 +197,7 @@
 			As part of a responsible ML workflow.\\
 			\vspace{10pt}
 			{\includegraphics[scale=0.08]{img/blueprint.png}}
-		\end{frame}		
-%-------------------------------------------------------------------------------
-	\section{Acknowledgements}
-%-------------------------------------------------------------------------------
-	\subsection*{}
-	\begin{frame}
-		\frametitle{Acknowledgements}
-		This presentation borrows heavily from the expertise of Nicholas Schmidt and Bryce Stephens of \href{https://www.bldsllc.com/}{BLDS, LLC}, a leading fair lending compliance firm.
-	\end{frame}	
+		\end{frame}
 %-------------------------------------------------------------------------------
 %	References
 %-------------------------------------------------------------------------------
