@@ -108,17 +108,30 @@
 			\frametitle{What is Discrimination in ML?}
 			\scriptsize			
 			\noindent In some applications\footnote{\tiny{e.g., Under the Equal Credit Opportunity Act (ECOA), as implemented by Regulation B, and the Fair Credit Reporting Act (FCRA})}, model predictions should \textit{ideally} be independent of demographic group membership.\\
+			  \begin{itemize}
+			    \item \tiny{High stake ML applications}
+			  \end{itemize}
 			\vspace{5pt}
 			\noindent In these applications, a model exhibits discrimination if:
 			\begin{enumerate}
-				\item Demographic group membership is not independent of the likelihood of receiving a favorable or accurate model prediction.
-				\item Membership in a \textit{subset} of a demographic group is not independent of the likelihood of receiving a favorable or accurate model prediction (i.e., \textit{local bias}).\cite{hall2019guidelines}
+				\item \tiny{Demographic group membership is not independent of the likelihood of receiving a favorable or accurate model prediction.}
+				\item \tiny{Membership in a \textit{subset} of a demographic group is not independent of the likelihood of receiving a favorable or accurate model prediction (i.e., \textit{local bias}).\cite{hall2019guidelines}}
 			\end{enumerate}
 			\noindent Several forms of discrimination may manifest in ML, including:
 			\begin{itemize}
-				\item Overt discrimination, i.e. \textit{disparate treatment}.
+				\item Intentional discrimination, i.e. \textit{disparate treatment}.
+				 \begin{itemize}
+				  \item \tiny{Using a demographic group variable as an input to a ML model, e.g. race, gender, etc.} 
+				 \end{itemize}
 				\item Unintentional discrimination, i.e. \textit{disparate impact} (DI).
+				 \begin{itemize}
+				  \item \tiny{Using a variable that is a reasonable predictor of the outcome but introduces some demographic group bias, e.g. a variable correlated to a demographic group variable.} 
+				  \item \tiny{Most ML models can be checked for this post hoc, e.g., disparate impact analysis (DIA).}
+				 \end{itemize}
 				\item Discrimination in ML may or may not be illegal, depending on how it arises and applicable discrimination laws.\cite{hall2019guidelines}
+				  \begin{itemize}
+				    \item \tiny{Regulated vs. Unregulated industries}
+				  \end{itemize}
 			\end{itemize}
 		\end{frame}		
 		\begin{frame}				
