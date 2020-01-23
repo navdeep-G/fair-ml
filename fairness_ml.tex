@@ -148,7 +148,7 @@
 		\end{frame}
 		\begin{frame}				
 			\frametitle{What is Discrimination in ML?}
-			Many kinds of group disparities can be measured, e.g.:\\
+			Many kinds of group disparities can be measured\footnote{\tiny{Python notebook showing different ways to measure group disparities: \url{https://github.com/navdeep-G/interpretable-ml/blob/master/python/jupyter-notebooks/credit/binomial/dia.ipynb}}}, e.g.:\\
 			\begin{itemize}
 				\item Accuracy disparity: $\frac{\text{accuracy}_p}{\text{accuracy}_r}$
 				\item Adverse impact ratio: $\frac{\text{\% accepted}_p }{ \text{\% accepted}_r}$
@@ -160,7 +160,6 @@
 			$\text{\% accepted}_\text{group} = 100 \cdot \frac{\text{tn}_\text{group}~+~\text{fn}_\text{group}}{N_\text{group}}$, and $\text{accuracy}_\text{group} = \frac{\text{tp}_\text{group}~+~\text{tn}_\text{group}}{N_\text{group}}$.\textsuperscript{$\mathparagraph$}\\
 			\vspace{10pt}
 			Local bias is much trickier to measure ... and often an unmitigated risk for consumer-facing ML systems.
-			\footnote{\tiny{Example notebook of above metrics plus others is located here: \url{https://github.com/navdeep-G/interpretable-ml/blob/master/python/jupyter-notebooks/credit/binomial/dia.ipynb}}}
 		\end{frame}		
 %-------------------------------------------------------------------------------
 	\section{How?}
